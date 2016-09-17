@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="bd" class="wrp clear-fix">
+    <div id="main">
+        {% for article in article_list %}
+        <div class="post-bd">
+            {{article.content|safe}}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

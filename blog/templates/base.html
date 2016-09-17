@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>-okSolasblog-</title>
+    <link rel="stylesheet" href="{%static 'css/pygments/github.css' %}">
+</head>
+<body>
+<a href="/login" >登录</a>||<a href="/logout">登出</a>
+<h1 align="center">Hello,{{user}}!</h1><br>
+<h1 align="center">welcome to okSolasblog MainPage!</h1>
+{% block content %}
+{% endblock %}
+</body>
+</html>
